@@ -1,0 +1,9 @@
+package exceptions;
+
+import consumables.Consumable;
+
+public class ConsumeEmptyException extends ConsumeException {
+    public ConsumeEmptyException(Consumable consumable){
+        super("Consumable is empty !", consumable);
+    }
+}
